@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "igor-blocks/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "igor-blocks",
+  "icon": "smiley",
+  "description": "Accordions for displaying FAQs on your website.",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "selector": "h2"
+    },
+    "openMultiple": {
+      "type": "boolean",
+      "default": false
+    },
+    "itemGap": {
+      "type": "number",
+      "default": 10
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false
+  },
+  "textdomain": "igor-challenge",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
